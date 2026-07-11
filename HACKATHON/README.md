@@ -1,4 +1,4 @@
-# AI Co-Pilot for HR Resume Screening
+# AI Co-Pilot for HR Resume Screening (👩🧑‍💼 Ismail HR Copilot)
 
 A complete, hackathon-ready **AI Co-Pilot** built for the "AI Innovation Hackathon" theme
 *"Build an AI Co-Pilot for Industry"* — solving the **HR Resume Screening** challenge.
@@ -11,7 +11,7 @@ Upload a Job Description and multiple candidate resumes. The AI Co-Pilot will:
 2. Extract skills, experience, education, and text similarity via NLP.
 3. Predict a **job-fit probability** using a custom **PyTorch ANN** (the primary predictive engine).
 4. Explain every prediction using **SHAP** (Explainable AI) + a confidence score.
-5. Use an **LLM (OpenAI)** only for summarization, natural-language explanation, and report writing.
+5. Use an **LLM (gemini ai)** only for summarization, natural-language explanation, and report writing.
 6. Let an HR reviewer **Approve / Reject / Modify** each AI recommendation (Human-in-the-Loop).
 7. Generate a **downloadable PDF report** with an executive summary and business model.
 
@@ -56,9 +56,6 @@ hr_resume_screening_copilot/
     └── reports/                # (optional) local copies of generated reports
 ```
 
-## Setup Instructions
-
-### 1. Create a virtual environment (Python 3.11.9 recommended)
 
 ```bash
 python3.11 -m venv venv
@@ -71,13 +68,6 @@ source venv/bin/activate        # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 3. Add your API key
-
-Open the `.env` file and paste your OpenAI API key:
-
-```
-OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxx
-```
 
 > The app will still run without a key — the LLM-based text sections will show a
 > placeholder message instead of AI-generated text. The ANN prediction and SHAP
@@ -116,18 +106,3 @@ ANN is trained on a **rule-based synthetic dataset** (`models/train_model.py`) t
 realistic scoring patterns with added noise. This is a standard, legitimate approach when
 real labeled hiring data is unavailable, and keeps the deep learning model as the genuine
 predictive engine (not the LLM), exactly as required by the hackathon rules.
-
-## Evaluation Rubric Mapping
-
-| Rubric Item | Where it's addressed |
-|---|---|
-| Business Problem | README + Business Model page |
-| Multimodal Integration | PDF/DOCX + Text NLP + Tabular features |
-| Deep Learning Implementation | `models/ann_model.py`, `models/train_model.py` |
-| Human-in-the-Loop | "2. Human-in-the-Loop Review" page |
-| Explainable AI | `src/explainability.py` (SHAP + confidence) |
-| System Architecture | Modular `src/` + `models/` structure |
-| User Experience | Streamlit multi-page app |
-| Business Model | "5. Business Model" page |
-| Innovation | ANN + SHAP + LLM reasoning combined with HITL gate |
-| Presentation | PDF report generation |
