@@ -37,7 +37,7 @@ from src.utils import generate_id
 # ---------------------------------------------------------------------------
 # PAGE CONFIG & INITIAL SETUP
 # ---------------------------------------------------------------------------
-st.set_page_config(page_title=APP_TITLE, page_icon="🧑‍💼", layout="wide")
+st.set_page_config(page_title=APP_TITLE, page_icon="👩🧑‍💼", layout="wide")
 
 # Database aur ANN model ko app start hote hi ready kar dete hain
 init_db()
@@ -54,7 +54,7 @@ if "jd_text" not in st.session_state:
 # ---------------------------------------------------------------------------
 # SIDEBAR NAVIGATION
 # ---------------------------------------------------------------------------
-st.sidebar.title("🧑‍💼 HR AI Co-Pilot")
+st.sidebar.title("👩🧑‍💼 Ismail HR  Copilot")
 page = st.sidebar.radio(
     "Navigate",
     [
@@ -62,8 +62,7 @@ page = st.sidebar.radio(
         "2. Human-in-the-Loop Review",
         "3. Analytics Dashboard",
         "4. Generate Report",
-        "5. Business Model",
-        "About",
+        
     ],
 )
 
@@ -374,41 +373,3 @@ elif page == "4. Generate Report":
             )
 
 
-# ---------------------------------------------------------------------------
-# PAGE 5: BUSINESS MODEL
-# ---------------------------------------------------------------------------
-elif page == "5. Business Model":
-    st.title("Business Model & Commercialization Strategy")
-    for para in BUSINESS_MODEL_TEXT.split("\n\n"):
-        st.write(para)
-
-
-# ---------------------------------------------------------------------------
-# PAGE: ABOUT
-# ---------------------------------------------------------------------------
-elif page == "About":
-    st.title("About This Project")
-    st.markdown(
-        """
-This project was built for the **AI Innovation Hackathon** under the theme
-**"Build an AI Co-Pilot for Industry"**, addressing the **HR Resume Screening** challenge.
-
-**Multimodal Data Used:**
-1. **PDF/DOCX Documents** — raw resume files parsed via `pdfplumber` and `python-docx`.
-2. **Text (NLP)** — unstructured resume & job description text analyzed for skills,
-   experience, education, and semantic similarity.
-3. **Tabular Data** — engineered numerical features fed into the predictive model.
-
-**Deep Learning Model:** A custom PyTorch Artificial Neural Network (ANN) is the
-**primary predictive engine**, trained to estimate a candidate's job-fit probability.
-
-**LLM Usage:** Used strictly for reasoning, resume summarization, explanation
-generation, and report writing — **never** for the core prediction.
-
-**Human-in-the-Loop:** Every AI recommendation must be Approved, Rejected, or
-Modified by an HR reviewer before it is considered final.
-
-**Explainable AI:** SHAP (SHapley Additive exPlanations) values show exactly how
-each feature influenced the AI's recommendation, alongside a numeric confidence score.
-        """
-    )
