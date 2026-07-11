@@ -1,0 +1,20 @@
+Job Title: Data Analyst
+
+We are looking for a Data Analyst with 3+ years of experience to join our growing analytics team.
+
+Required Skills:
+- Python and SQL for data analysis
+- Machine learning fundamentals
+- Data visualization using Power BI or Tableau
+- Strong communication and problem solving skills
+- Experience with Excel and data cleaning
+
+Education: Bachelor's degree in Computer Science, Statistics, or related field. Master's degree is a plus.
+
+Responsibilities:
+- Analyze large datasets to generate business insights
+- Build dashboards and reports for stakeholders
+- Collaborate with cross-functional teams on data-driven projects
+- Present findings to management in a clear, actionable format
+
+We value candidates who are adaptable, detail-oriented, and passionate about turning data into decisions.

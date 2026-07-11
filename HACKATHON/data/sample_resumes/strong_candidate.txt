@@ -1,0 +1,26 @@
+Ayesha Khan
+Data Analyst | 5 years of experience
+
+SUMMARY
+Detail-oriented Data Analyst with 5 years of experience in Python, SQL, and machine learning.
+Skilled in building dashboards using Power BI and Tableau, with strong communication and
+problem solving abilities.
+
+EDUCATION
+Master of Science in Computer Science, 2019
+Bachelor of Science in Statistics, 2017
+
+EXPERIENCE
+Senior Data Analyst, TechCorp (2019 - Present)
+- Built predictive machine learning models using Python and scikit-learn
+- Designed dashboards in Power BI for executive reporting
+- Wrote complex SQL queries for data extraction and cleaning
+- Led a team of 3 junior analysts, applying strong leadership and project management skills
+
+Data Analyst, DataWorks (2017 - 2019)
+- Performed data cleaning and exploratory analysis in Excel and Python
+- Collaborated with cross-functional teams to deliver actionable insights
+
+SKILLS
+Python, SQL, Machine Learning, Power BI, Tableau, Excel, Communication, Problem Solving,
+Data Science, Leadership, Project Management
