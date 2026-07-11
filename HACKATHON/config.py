@@ -47,7 +47,7 @@ LLM_PROVIDER = os.getenv("LLM_PROVIDER", "openai")  # future ke liye extensible
 # ---------------------------------------------------------------------------
 # APP CONSTANTS
 # ---------------------------------------------------------------------------
-APP_TITLE = "AI Co-Pilot for HR Resume Screening"
+APP_TITLE = "👩🧑‍💼 Ismail HR Copilot"
 RECOMMENDATION_THRESHOLD = 0.5  # is se upar probability ho to "Recommended"
 
 # Feature vector ke names - ANN model isi order mein features expect karta hai
